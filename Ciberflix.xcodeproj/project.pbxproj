@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		9271C55C2A2503A100E31A4F /* CiberflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271C55B2A2503A100E31A4F /* CiberflixApp.swift */; };
-		9271C55E2A2503A100E31A4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271C55D2A2503A100E31A4F /* ContentView.swift */; };
 		9271C5602A2503A200E31A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9271C55F2A2503A200E31A4F /* Assets.xcassets */; };
 		9271C5632A2503A200E31A4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9271C5622A2503A200E31A4F /* Preview Assets.xcassets */; };
+		9271C56D2A25043800E31A4F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271C56A2A25043800E31A4F /* LoginView.swift */; };
+		9271C56E2A25043800E31A4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271C56B2A25043800E31A4F /* ContentView.swift */; };
+		9271C56F2A25043800E31A4F /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271C56C2A25043800E31A4F /* PageView.swift */; };
+		9271C5722A25046400E31A4F /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271C5712A25046400E31A4F /* PageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9271C5582A2503A100E31A4F /* Ciberflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ciberflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9271C55B2A2503A100E31A4F /* CiberflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiberflixApp.swift; sourceTree = "<group>"; };
-		9271C55D2A2503A100E31A4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9271C55F2A2503A200E31A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9271C5622A2503A200E31A4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9271C56A2A25043800E31A4F /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9271C56B2A25043800E31A4F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9271C56C2A25043800E31A4F /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		9271C5712A25046400E31A4F /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,9 @@
 		9271C55A2A2503A100E31A4F /* Ciberflix */ = {
 			isa = PBXGroup;
 			children = (
+				9271C5702A25046400E31A4F /* Model */,
+				9271C5692A25043800E31A4F /* View */,
 				9271C55B2A2503A100E31A4F /* CiberflixApp.swift */,
-				9271C55D2A2503A100E31A4F /* ContentView.swift */,
 				9271C55F2A2503A200E31A4F /* Assets.xcassets */,
 				9271C5612A2503A200E31A4F /* Preview Content */,
 			);
@@ -65,6 +72,26 @@
 				9271C5622A2503A200E31A4F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9271C5692A25043800E31A4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9271C56A2A25043800E31A4F /* LoginView.swift */,
+				9271C56B2A25043800E31A4F /* ContentView.swift */,
+				9271C56C2A25043800E31A4F /* PageView.swift */,
+			);
+			name = View;
+			path = ../../NetflixCopyApp/Shared/View;
+			sourceTree = "<group>";
+		};
+		9271C5702A25046400E31A4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9271C5712A25046400E31A4F /* PageModel.swift */,
+			);
+			name = Model;
+			path = ../../NetflixCopyApp/Shared/Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9271C55E2A2503A100E31A4F /* ContentView.swift in Sources */,
+				9271C56F2A25043800E31A4F /* PageView.swift in Sources */,
+				9271C5722A25046400E31A4F /* PageModel.swift in Sources */,
+				9271C56D2A25043800E31A4F /* LoginView.swift in Sources */,
+				9271C56E2A25043800E31A4F /* ContentView.swift in Sources */,
 				9271C55C2A2503A100E31A4F /* CiberflixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
